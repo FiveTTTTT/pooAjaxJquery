@@ -120,6 +120,7 @@ $('.buttonCo').click(function () {
         })
 
         isPseudo = true;
+        charger();
         destroyThat();
     }
     else {
