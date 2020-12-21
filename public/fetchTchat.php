@@ -8,18 +8,18 @@ try {
 
 // si les variables ne sont pas vides
 
-$requete = $bdd->query('SELECT * FROM messages LIMIT 0,10');
+$requete = $bdd->query('SELECT * FROM messages ORDER BY id DESC LIMIT 0,7');
 $mm = "";
 
 while ($donnees = $requete->fetch()) {
     // on affiche le message (l'id servira plus tard)
     if ($donnees['user_name'] == $_POST['pseudo']) {
         $cl = "maCl";
-        $mm = $mm . "<p class='" . $cl . "' >". $donnees['message'] . "</p>";
+        $mm =  "<p class='" . $cl . "' >".$donnees['id']."=". $donnees['message'] . "</p>".$mm ;
 
     } else {
         $cl = "othCl";
-        $mm = $mm . "<p class='" . $cl . "' >" . $donnees['user_name'] . " => " . $donnees['message'] . "</p>";
+        $mm =  "<p class='" . $cl . "' >".$donnees['id']."=" . $donnees['user_name'] . " => " . $donnees['message'] . "</p>".$mm;
 
     }
 }

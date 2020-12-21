@@ -40,14 +40,14 @@ function charger() {
             data: 'pseudo=' + name, // On fait passer nos variables, exactement comme en GET, au script more_com.php
             dataType: 'html',
             success: function (html) {
-                $('#messages').empty().append(html); // on veut ajouter les nouveaux messages au début du bloc #messages
+                $('#messages').empty().prepend(html); // on veut ajouter les nouveaux messages au début du bloc #messages
             }
         });
 
         charger(); // on relance la fonction
 
-    }, 5000); // on exécute le chargement toutes les 5 secondes
+    }, 50); // on exécute le chargement toutes les 5 secondes
 
 }
 
-// charger();
+charger();
