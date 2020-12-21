@@ -1,0 +1,510 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: danmark;
+    color: #c59803;
+    
+}
+body{
+    background-image: url(../img/backgrounds/backPrincip.jpg);
+}
+
+
+@font-face {
+    font-family: gabriola;
+    src: url(../fonts/Gabriola.ttf);
+}
+@font-face {
+    font-family: danmark;
+    src: url(../fonts/DanmarkURWTDem.ttf);
+}
+@font-face {
+    font-family: system;
+    src: url(../fonts/System.ttf);
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+             
+}
+.menu img{
+    width: 50%;
+}
+
+.menu li{
+    display: flex;
+    flex-direction: column;
+}
+
+header li{
+    width: 20%;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+h1{
+    font-family: gabriola;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+#rep{
+    width: 70%;
+}
+
+.miniRep20 p{
+    text-align: end;
+}
+
+ul{
+    width: 80%;
+    list-style: none; 
+}
+
+.sond2, #sond1{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bann {
+    background-image: url(../img/banniere.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 4vh -7vh;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: flex-end;
+    border-top: dashed #c59803;
+    border-bottom: dashed #c59803;
+    
+
+}
+
+.bann img{
+    width: 20%;
+    margin-left: 10%;
+    
+}
+
+.tchat{
+    width: 80%;
+    margin: auto;
+    
+    
+}
+#messages{
+    width: 100%;
+    height: 60vh;
+    padding: 10px;
+    /* margin-left: 10%; */
+    background-color:white;
+    border: 10px solid black ;
+}
+
+#frm{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#pseudo{
+    text-align: left;
+    width: 100px;
+}
+
+#message{
+    width: 100%;
+    text-align: left;
+    display: flex;
+    /* position: relative; */
+}
+
+#envoi{
+    width: 50%;
+    margin: auto;
+
+}
+
+.maCl, .othCl{
+    margin: 2px;
+    padding: 3px;
+    width: 60%;
+    font-size: xx-large;
+}
+
+.maCl{
+    float: right;
+    border-radius: 10px;
+    text-align: right;
+    background-color: rgba(0,100,255,0.8);
+}
+.othCl{
+    float: left;
+    border-radius: 10px;
+    text-align: left;
+    background-color: rgba(0,255,100,0.8);
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+button{
+    width: 100%;
+    background-image: url(../img/backgrounds/backPrincip.jpg);
+    border-style: none;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+.miniRep0{
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 100%;
+    opacity: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.fondRep0{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 4em;
+    border-style: inset;
+    border-radius: 1.5vh;
+    border-width: 1vh;
+}
+.miniRep0:not(.fini):hover{
+    background-size: 60%;
+    background-position: 0 -3vh;
+    opacity: 100%;
+    font-size: larger;
+}
+.fondRep0:not(.fini):hover{
+    border-style: outset;
+    border-radius: 2vh;
+}
+
+.miniRep0 p{
+    font-size: larger;
+    color: crimson;
+    font-weight: bold;
+    text-shadow: #000 0px 0px 3px;
+}
+
+.fondRep21{
+    background-image: url(../img/fondRep/fondRep2-1.png);
+}
+.miniRep21{
+    background-image: url(../img/mini/mini-book1.png);
+}
+.miniRep21:hover{
+    background-position: 0 -3vh;
+}
+
+.fondRep22{
+    background-image: url(../img/fondRep/fondRep2-2.png);
+    
+}
+.miniRep22{
+    background-image: url(../img/mini/mini-book2.png);
+}
+.miniRep22:hover{
+    background-position: 0 -3vh;
+}
+
+.fondRep23{
+    background-image: url(../img/fondRep/fondRep2-3.png);   
+}
+.miniRep23{
+    background-image: url(../img/mini/mini-book3.png);
+}
+.fondRep23 .miniRep23:hover{
+    background-size: 70%;
+    background-position: 0 -2vh;    
+}
+
+.fondRep24{
+    background-image: url(../img/fondRep/fondRep2-4.png);  
+}
+.miniRep24{
+    background-image: url(../img/mini/mini-book4.png);
+}
+.miniRep24:hover{
+    background-position: 0 -3vh;
+}
+
+.avenir{
+    display: none;
+}
+
+#sond2{
+    display: flex;
+    justify-content: center;
+}
+
+#sondage1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sond1 button{
+    opacity: 60%;
+}
+.sond1 #rep{
+    background-color: grey;
+}
+
+.fondRep11{
+    background-image: url(../img/fondRep/fondSond2-1.jpg);
+}
+.miniRep11{
+    background-image: url(../img/mini/miniAlf.png);
+}
+
+.fondRep12{
+    background-image: url(../img/fondRep/fondSd.png);
+}
+.miniRep12{
+    background-image: url(../img/mini/miniMar.png);
+}
+
+.fondRep13{
+    background-image: url(../img/fondRep/fondGoHW.png);
+}
+.miniRep13{
+    background-image: url(../img/mini/miniSel.png);
+}
+
+.fondRep14{
+    background-image: url(../img/fondRep/fond776.jpg);
+}
+.miniRep14{
+    background-image: url(../img/mini/miniLei.png);
+}
+.fondRep15{
+    background-image: url(../img/fondRep/fondAwa.png);
+}
+.miniRep15{
+    background-image: url(../img/mini/miniChr.png);
+}
+
+.fondRep16{
+    background-image: url(../img/fondRep/fondFate.jpg);
+}
+.miniRep16{
+    background-image: url(../img/mini/miniCor.png);
+}
+
+.fondRep17{
+    background-image: url(../img/fondRep/fondTh.png);
+}
+.miniRep17{
+    background-image: url(../img/mini/miniByl.png);
+}
+
+.formu{
+    margin: 5%;
+}
+
+
+footer{
+    background-color: black;
+    opacity: 60%;
+    height: 20vh;
+    width: 100%;
+    
+}
+
+footer .menu{
+    display: flex;
+    justify-content: space-around;
+    
+}
+footer .menu li{
+    margin: 5vh;
+}
+
+main .resultats{
+    width: 100%;
+}
+main .resultats li{
+    border:  #c59803 dashed;
+    background-image: url(../img/backgrounds/backRes.jpg.png);
+    background-size: 20vh;
+    background-repeat: no-repeat;
+    height: 10vh;
+    margin: 1vh;
+}
+
+main .resultats li p{
+    text-shadow: black 1px 0 7px;
+    font-size: 3vh;
+    text-align: end;
+    padding-right: 5vh;
+}
+
+.resultats .resAlf{
+    width: 16%;
+}
+.resultats .resMar{
+    width: 64%;
+    background-size: 100%;
+    background-position: 0.5vh;
+}
+.resultats .resSel{
+    width: 46%;
+    background-size: 100%;
+    background-position: 0.5vh;
+}
+.resultats .resLei{
+    width: 20%;
+}
+.resultats .resChr{
+    width: 10%;
+    
+}
+.resultats .resCor{
+    width: 16%;
+    
+}
+.resultats .resByl{
+    width: 28%;
+    background-size: 100%;
+    background-position: 0.5vh;
+}
+
+.no-participation{
+    display: none;
+}
+p .no-participation{
+    display: block;
+}
+
+
+
+
+
+
+@media screen and (min-width: 640px) and (max-width: 1000px){
+    .menu img{
+        width: 30%;
+    }
+    .bann{
+        background-size: 80vh;
+        background-position: 40vh -10vh;
+    }
+    .bann img{
+        width: 18%;
+    }
+
+    .miniRep0{
+        background-size: 40%;
+    }
+    .fondRep0{
+        height: 8em;
+    }
+    .miniRep0:not(.fini):hover{
+        background-size: 50%;
+    }
+
+
+    .resultats .resAlf{
+        width: 16%;
+        background-size: 100%;
+        background-position: 0.5vh;
+    }
+    .resultats .resLei{
+        width: 20%;
+        background-size: 100%;
+        background-position: 0.5vh;
+    }
+    .resultats .resChr{
+        width: 10%;
+        background-size: 100%;
+        background-position: 0.5vh;
+        
+    }
+    .resultats .resCor{
+        width: 16%;
+        background-size: 100%;
+        background-position: 0.5vh;
+        
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .menu{
+        margin-left: 10%;
+    }
+    .menu img{
+        width: 20%;
+    }
+    .bann{
+        background-size: 80vh;
+        background-position: 60vh -10vh;
+    }
+    .bann img{
+        width: 14%;
+        margin-left: 17vh;
+    }
+
+    .miniRep0{
+        background-size: 40%;
+    }
+    .fondRep0{
+        height: 9.5em;
+    }
+    .miniRep0:not(.fini):hover{
+        background-size: 50%;
+    }
+
+    .resultats .resAlf{
+        width: 16%;
+        background-size: 100%;
+        background-position: 0.5vh;
+    }
+    .resultats .resLei{
+        width: 20%;
+        background-size: 100%;
+        background-position: 0.5vh;
+    }
+    .resultats .resChr{
+        width: 10%;
+        background-size: 100%;
+        background-position: 0.5vh;
+        
+    }
+    .resultats .resCor{
+        width: 16%;
+        background-size: 100%;
+        background-position: 0.5vh;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
