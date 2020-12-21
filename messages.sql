@@ -34,7 +34,9 @@ CREATE TABLE `messages` (
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_bin;
 
-
+--
+-- Déchargement des données de la table `messages`
+--
 
 --
 -- Index pour les tables déchargées

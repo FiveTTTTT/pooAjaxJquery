@@ -46,7 +46,7 @@ function charger() {
 
         charger(); // on relance la fonction
 
-    }, 50); // on exécute le chargement toutes les 5 secondes
+    }, 2000); // on exécute le chargement toutes les 2 secondes
 
 }
 

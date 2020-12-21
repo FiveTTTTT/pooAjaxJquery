@@ -106,7 +106,7 @@ ul{
 }
 #messages{
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     padding: 10px;
     /* margin-left: 10%; */
     background-color:white;
@@ -128,7 +128,6 @@ ul{
     width: 100%;
     text-align: left;
     display: flex;
-    /* position: relative; */
 }
 
 #envoi{
@@ -139,20 +138,19 @@ ul{
 
 .maCl, .othCl{
     margin: 2px;
-    padding: 3px;
-    width: 60%;
+    padding: 10px;
+    width: 51%;
     font-size: xx-large;
+    border-radius: 10px;
 }
 
 .maCl{
     float: right;
-    border-radius: 10px;
     text-align: right;
     background-color: rgba(0,100,255,0.8);
 }
 .othCl{
     float: left;
-    border-radius: 10px;
     text-align: left;
     background-color: rgba(0,255,100,0.8);
 }
